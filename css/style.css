@@ -154,7 +154,7 @@ textarea {
   }
 }
 /* Header */
-#navbar-default {
+#home {
   position: absolute;
   top: 0;
   width: 100%;
@@ -167,12 +167,23 @@ textarea {
 }
 
 .navbar{
+  /*position: relative;*/
+  margin-bottom: 0;
   background-color: transparent;
   border-color: transparent;
-  z-index: 99;
   margin: .9em 0 0 0;
   padding: 0;
   font-weight: 700;
+  z-index: 99;
+}
+
+.navbar-nav li a:hover{
+    color: #ffffff !important;
+}
+
+.navbar-nav li.active a{
+    background-color: #ffffff !important;
+    color: #777777 !important;
 }
 
 .navbar-left {
@@ -186,10 +197,22 @@ textarea {
 }
 
 .navbar-right{
-  float: right;
-  position: relative;
-  margin-right: -20px;
+  margin-right: -40px;
 }
+
+@media screen and (max-width: 992px){
+  .navbar-right{
+    margin-right: 100px;
+  }
+}
+
+@media screen and (max-width: 1250px){
+  .navbar-right{
+    margin-right:90px;
+  }
+}
+
+
 
 .navbar-right li a{
   display: inline-block;
@@ -210,7 +233,7 @@ textarea {
 }
 
 .navbar-right li a:hover{
-    color: #ffffff !important;
+    color: #ffffff;
 }
 
 .navbar-right li a:hover:after{
@@ -219,8 +242,52 @@ textarea {
 }
 
 .navbar-nav li.active a{
-    background-color: #ffffff !important;
-    color: #777777 !important;
+    background-color: #ffffff;
+    color: #777777;
+}
+
+.navbar-default .navbar-toggle {
+    /*background-color:rgba(15, 255, 255, 0) !important;*/
+    border-color: transparent;
+    color: #ffffff !important;
+}
+
+#mobile-button{
+  position:relative;
+  left: 22px;
+  background-color: #003865;
+}
+
+#mobile-button .icon-bar{
+  background-color: #eaeaea;
+}
+
+#mobile-button:hover{
+  position:relative;
+  left: 22px;
+  background-color: #eaeaea;
+}
+
+#mobile-button:hover .icon-bar{
+  background-color: #003865;
+}
+
+@media screen and (max-width: 768px){
+  #home{
+    background: #003865 !important;
+    margin-top: 0;
+  }
+
+  #home .container{
+    margin-top: .9em;
+  }
+}
+
+#navbar-fixed{
+  display: none;
+  background-color: #151515;
+  border-color: #151515;
+  z-index: 99;
 }
 
 #mlh-badge{
