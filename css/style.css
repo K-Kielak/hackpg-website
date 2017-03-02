@@ -702,9 +702,7 @@ body.fh5co-mobile-menu-visible #fh5co-mobile-menu {
 }
 
 #map{
-
   border: 0
-
 }
 
 #map-row{
@@ -721,6 +719,7 @@ body.fh5co-mobile-menu-visible #fh5co-mobile-menu {
 }
 
 #contact {
+  text-align: center;
   clear: both;
   position: relative;
   padding: 4em 0 1em 0;
@@ -771,6 +770,14 @@ body.fh5co-mobile-menu-visible #fh5co-mobile-menu {
   padding: 0;
   margin: 0;
   list-style: none;
+}
+
+#contact .email{
+  color: #000000;
+}
+
+#contact .email:hover{
+  color: #003865;
 }
 
 .quote {
